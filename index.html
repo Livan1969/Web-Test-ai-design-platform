@@ -1,34 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Design Platform</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Generador de Logos con IA</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>AI Design Platform</h1>
-    <p>Una plataforma todo-en-uno con inteligencia artificial</p>
-  </header>
-  <main>
-    <section class="features">
-      <h2>Funcionalidades IA</h2>
-      <ul>
-        <li>🧠 Generador de Logos</li>
-        <li>✍️ Creador de Contenido</li>
-        <li>🎬 Creador de Video</li>
-        <li>🖼️ Generador de Imágenes desde Texto</li>
-        <li>🎵 Generador de Canciones desde Texto</li>
-        <li>🎨 Colores y Tipografías</li>
-        <li>🔤 Generador de Nombres y Eslogans</li>
-        <li>⚙️ Automatización de Redes Sociales</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 AI Design Platform</p>
-  </footer>
+  <div class="container">
+    <h1>Generador de Logos con IA</h1>
+    <p>Introduce la información de tu marca y deja que la inteligencia artificial haga el resto.</p>
+    <form id="logoForm">
+      <input type="text" placeholder="Nombre de la marca" id="brandName" required />
+      <input type="text" placeholder="Industria o sector" id="industry" />
+      <select id="style">
+        <option value="moderno">Moderno</option>
+        <option value="minimalista">Minimalista</option>
+        <option value="vintage">Vintage</option>
+      </select>
+      <input type="color" id="color" value="#007bff" />
+      <button type="submit">Generar Logo</button>
+    </form>
+    <div id="result" class="hidden">
+      <h2>Logos generados</h2>
+      <div class="logo-preview">
+        <img src="https://via.placeholder.com/300x200?text=Logo+1" alt="Logo generado 1" />
+        <img src="https://via.placeholder.com/300x200?text=Logo+2" alt="Logo generado 2" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
